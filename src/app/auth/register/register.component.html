@@ -1,0 +1,6 @@
+<h2>Registro</h2>
+<form (ngSubmit)="onRegister(registerForm)" #registerForm="ngForm">
+  <input type="email" name="email" ngModel placeholder="Email" required />
+  <input type="password" name="password" ngModel placeholder="Contraseña" required />
+  <button type="submit" [disabled]="registerForm.invalid">Registrarse</button>
+</form>
